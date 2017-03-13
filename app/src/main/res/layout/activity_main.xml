@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.god.alram.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/search_area"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/start_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="장소를 입력하세요"
+            android:inputType="text"
+            android:singleLine="true"
+            android:lines="1"
+            android:background="@drawable/xml_edittext"/>
+        <!--
+            hint - 사용자가 어떤 텍스트 박스인지 알수있게 공백의 상태에서 해당 문구를 보여준다
+            inputType - 에디트 텍스트에 입력 할 수 있는 문자의 타입을 지정
+            privateImeOptions - 에디트텍스트 키보드의 기본 언어를 설정
+            background - drawable/xml_edittext에서 설정한 것을 editText에 적용시킨다.
+        -->
+        <EditText
+            android:id="@+id/end_search_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="도착지를 입력하세요"
+            android:inputType="text"
+            android:singleLine="true"
+            android:lines="1"
+            android:background="@drawable/xml_edittext"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/place_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

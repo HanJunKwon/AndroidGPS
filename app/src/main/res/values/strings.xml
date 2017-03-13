@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Alram</string>
+    <string name="favorite">즐겨찾기</string>
+    <string name="set_up">설정</string>
+</resources>
